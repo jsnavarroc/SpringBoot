@@ -1,14 +1,9 @@
-#Se pueden poner comentarios. 
+#Database Configuration
 spring:
-  cache:
-    redis:
-      use-key-prefix: true
-  jmx:
-   enabled: true
-   unique-names: false
-server:
-  jetty:
-    acceptors: -1
-    accesslog:
-      append: false
-      date-format: dd/MMM/yyyy:HH:mm:ss
+  #Se proporciona para la BD 
+  datasource:
+             url: jdbc:mysql://localhost:3306/recursos_humanos?useUnicode=true&useJDBCCompliantTimezoneShift=true&useLegacyDatetimeCode=false&serverTimezone=UTC
+             username: root
+             password: admin
+             driver-class-name: com.mysql.cj.jdbc.Driver
+ 
