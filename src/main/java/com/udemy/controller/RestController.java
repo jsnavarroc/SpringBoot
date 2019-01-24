@@ -52,6 +52,7 @@ public class RestController {
 	
 	/**
 	 * Conectado con la BD de MYSQL
+	 * Falta indicar que es un JSON
 	 * @return
 	 */
 	@GetMapping(path="/userName")
